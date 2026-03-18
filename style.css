@@ -1,0 +1,195 @@
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined', sans-serif;
+    font-size: 24px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 24;
+    
+    height: 2em;
+    width: 2em;
+}
+
+.divider {
+    flex-basis: 100%;
+    margin: 0.5em;
+}
+
+body {
+    margin: 5em;
+    background-color: var(--color-primary);
+}
+
+label {
+    font-size: 16px;
+    font-family: "Google Sans Code", monospace;
+    color: var(--color-quinary);
+
+    margin-left: 1em;
+    margin-right: 0.25em;
+}
+
+input, select {
+    font-size: 16px;
+    font-family: "Google Sans Code", monospace;
+    color: var(--color-quinary);
+
+    background-color: var(--color-primary);
+    border-width: 1px;
+}
+#top-row input {
+    height: 3em;
+}
+
+button, input, select {
+    vertical-align: middle;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#top-row {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+#pause, #reset {
+    margin: 0;
+    padding: 0;
+    height: 2em;
+
+    color: var(--color-quinary);
+    
+    background-color: var(--color-primary);
+    border-width: 1px;
+    border-color: var(--color-quaternary);
+}
+
+#method, #delay, #time {
+    font-size: 16px;
+    font-family: "Google Sans Code", monospace;
+    color: var(--color-quinary);
+
+    height: 3em;
+    margin: 0;
+    text-align: center;
+}
+
+.player {
+    height: 20rem;    
+    width: 30rem;
+
+    font-size: 32px;
+    font-family: "Google Sans Code", monospace;
+    color: var(--color-quaternary);
+    text-align: center;
+
+    background-color: var(--color-secondary);
+    border-color: var(--color-tertiary);
+    border-width: 1px;
+}
+
+.warning {
+    animation: warning-color 1s ease-in-out infinite;
+}
+
+.alert {
+    animation: alert-color 0.5s ease-in-out infinite;
+}
+
+.critical {
+    animation: critical-color 0.25s ease-in-out infinite;
+}
+
+#bottom-row {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: nowrap;
+}
+
+#bottom-row input, #themes {
+    height: 2.5em;
+    padding: 0 0.75em;
+    border: 1px solid var(--color-quaternary);
+    background-color: var(--color-primary);
+    color: var(--color-quinary);
+    font-size: 16px;
+    font-family: "Google Sans Code", monospace;
+    box-sizing: border-box;
+}
+
+
+.player-names {
+    font-size: 16px;
+    font-family: "Google Sans Code", monospace;
+}
+
+.player-names input {
+    width: 14.5em;
+    text-align: center;
+    padding: 0 0.75em;
+}
+
+.player-names input::placeholder {
+    background-color: var(--color-primary);
+    color: var(--color-tertiary);
+    font-family: "Google Sans Code", monospace;
+}
+
+.pop-up-menu {
+    display: none;
+    position: absolute;
+    
+    top: 3em;
+    right: 0;
+    
+    padding: 1em;
+    background-color: var(--color-secondary);
+    border-radius: 1em;
+}
+
+.pop-up-menu h1{
+    font-size: 16px;
+    font-family: "Google Sans Code", monospace;
+    text-decoration: underline;
+    color: var(--color-quinary);
+
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+.pop-up-menu button {
+    display: block;
+    width: 100%;
+    padding: 0.5em 1em;
+    margin-bottom: 0.5em;
+
+    background-color: var(--color-primary);
+    color: var(--color-quinary);
+    border-width: 1px;
+}
+
+.show {
+    display: block;
+}
+
+@keyframes warning-color {
+    0%,100% {opacity: 1}
+    50% {opacity: 0.7}
+}
+
+@keyframes alert-color {
+    0%,100% {opacity: 1; color: #826e6e}
+    50% {opacity: 0.5}
+}
+
+@keyframes critical-color {
+    0%,100% {opacity: 1; color: #a93d3d}
+    50% {opacity: 0.3}
+}
