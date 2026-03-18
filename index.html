@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Clock</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="themes.css">
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap">
+</head>
+<body>
+    <div id = "container">
+        <div id = "top-row">
+            <button class = "material-symbols-outlined" id = "pause">pause</button>
+            <button class = "material-symbols-outlined" id = "reset">refresh</button>
+            <label for="method">Method: </label>
+            <select name="method" id="method">
+                <option value="fischer">Fischer</option>
+                <option value="delay">Simple (US) Delay</option>
+                <option value="bronstein">Bronstein</option>
+                <option value="sd">Sudden Death</option>
+            </select>
+            <label for="delay">Delay/Increment (s): </label>
+            <input type = "number" id = "delay" value = "2" min = "0" max = "60" step = "0.1">
+            <label for="time">Mode:</label>
+            <input type="text" name = "time" id = "time" list = "modes">
+            <datalist id="modes">
+                <option value="Bullet">
+                <option value="Blitz-1">
+                <option value="Blitz-2">
+                <option value="Rapid-1">
+                <option value="Rapid-2">
+                <option value="Rapid-3">
+                <option value="Classical">
+            </datalist>
+        </div>
+        <div class = "divider"></div>
+        <div id = "clock">
+            <button class = "player" disabled>White</button>
+            <button class = "player" disabled>Black</button>
+        </div>
+        <div class="divider"></div>
+        <div id="bottom-row">
+            <div id = "player-names" class = "player-names">
+                <input type="text" placeholder="White Player">
+                <input type="text" placeholder="Black Player">
+            </div>
+            <button id = "themes">Themes</button>
+            <div class="pop-up-menu">
+                <h1>Themes</h1>
+                <button>Light</button>
+                <button>Dark</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
