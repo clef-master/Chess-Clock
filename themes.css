@@ -1,0 +1,25 @@
+:root {
+    font-size: 16px;
+
+    --color-primary: #fff;
+    --color-secondary: #efefef;
+    --color-tertiary: #acacac;
+    --color-quaternary: #767676;
+    --color-quinary: #000;
+}
+
+.light-theme {
+    --color-primary: #fff;
+    --color-secondary: #efefef;
+    --color-tertiary: #acacac;
+    --color-quaternary: #767676;
+    --color-quinary: #000;
+}
+
+.dark-theme {
+    --color-primary: #2A2A2A;
+    --color-secondary: #424242;
+    --color-tertiary: #5F5F5F;
+    --color-quaternary: #858585;
+    --color-quinary: #B0B0B0;
+}
